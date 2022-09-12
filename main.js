@@ -23,12 +23,21 @@ const whilst = () => {
 
 // console.log(whilst());
 
-const result = (food, location, whilst) => {
-    return `You should have ${food} for breakfast.
-You should eat it ${location}.
-You should eat while ${whilst}.`
+const emoji = () => {
+    let emojis = ['<3', ':)', ':o', '|_o.o_|', ':3'];
+
+    return emojis[Math.floor(Math.random() * emojis.length)];
 }
 
-console.log('========================================')
-console.log(result(food(), location(), whilst()));
-console.log('========================================')
+// Put random words together and format them into sentences.
+const result = (food, location, whilst, emoji) => {
+    return `You should have ${food} for breakfast.
+You should eat it ${location}.
+You should eat while ${whilst}.
+${emoji}`;
+}
+
+// Print the results
+console.log('========================================');
+console.log(result(food(), location(), whilst(), emoji()));
+console.log('========================================');
