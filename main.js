@@ -8,7 +8,7 @@ const food = () => {
 // console.log(food());
 
 const location = () => {
-    let locations = ['outside', 'living room', 'kitchen', 'bedroom', 'cafe', 'park'];
+    let locations = ['outside', 'in the living room', 'in the kitchen', 'in the bedroom', 'atthe cafe', 'at the park'];
 
     return locations[Math.floor(Math.random() * locations.length)];
 }
@@ -21,4 +21,14 @@ const whilst = () => {
     return tasks[Math.floor(Math.random() * tasks.length)];
 }
 
-console.log(whilst());
+// console.log(whilst());
+
+const result = (food, location, whilst) => {
+    return `You should have ${food} for breakfast.
+You should eat it ${location}.
+You should eat while ${whilst}.`
+}
+
+console.log('========================================')
+console.log(result(food(), location(), whilst()));
+console.log('========================================')
