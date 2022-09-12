@@ -8,9 +8,17 @@ const food = () => {
 // console.log(food());
 
 const location = () => {
-    let locations =['outside', 'living room', 'kitchen', 'bedroom', 'cafe', 'park'];
+    let locations = ['outside', 'living room', 'kitchen', 'bedroom', 'cafe', 'park'];
 
     return locations[Math.floor(Math.random() * locations.length)];
 }
 
-console.log(location());
+// console.log(location());
+
+const whilst = () => {
+    let tasks = ['reading', 'listening to music', 'listening to a podcast', 'watching youtube', 'watching tv', 'planning your day'];
+
+    return tasks[Math.floor(Math.random() * tasks.length)];
+}
+
+console.log(whilst());
